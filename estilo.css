@@ -1,0 +1,140 @@
+body {
+    display: flex; flex-direction: column;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('Recursos/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url('Recursos/Inter-Bold.ttf');
+}
+
+.menu, .info-menu {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    justify-content: center;
+    z-index: 2;
+    text-decoration: none;
+    
+}
+
+.info-menu{
+    height: 5vh;
+    background: #260D0D;
+    cursor:none;
+}
+
+p{
+    color: #260D0D;
+    font-family: Inter;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: Inter-bold;
+}
+
+ul, li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+a{
+
+    align-items: left;
+    font-family: Inter;
+    color: #260D0D;   
+    margin: 5px;
+}
+
+a:hover{
+    font-family: Inter-Bold;
+}
+
+.header{
+    background-color:#84ff00;
+    height: 88vh;
+    width: 100vw;
+}
+
+#coleccion{
+    width: 100vw;
+    height: 100vh;
+    background-color: #260D0D;
+}
+#questions{
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom:1rem ;
+    border-bottom:2px solid #260D0D;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin: 2rem 0rem;
+}
+
+.preguntas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preguntas h1{
+    font-size: 1.8rem;
+}
+
+.respuestas{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.respuestas p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.faq.active .respuestas{
+    max-height: 300px;
+}
+
+.faq.active svg{
+    transform: rotate(90deg);
+}
+
+svg{
+    transition: transform .5s ease-in;
+}

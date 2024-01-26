@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wabie</title>
+    <link rel="icon" href="Recursos/logo.png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="media.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Leandro Nicola">
+    <meta name="description" content="Somos una marca de ropa con base en Montevideo, Uruguay. Creada en Diciembre del 2023, nos caracterizamos por diseños originales y con buenas vibras. Para todos los amantes del estilo oversize, tenemos la ropa perfecta para ustedes. Con diferentes Drops que nos hace una marca en constante actualización.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Script de efecto para desplegar opciones -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <!-- <script>
+        //////////////////// Desplegar opciones cuando nos posicionamos sobre el menú de barras //////////////////////
+        $(document).ready(function () {
+            $(".op-bars").click(function () {
+                $(".menu-adaptable").slideToggle("slow");
+            });
+        });
+        ////////////////////////////// Ocultar menú cuando hacemos clic en las opciones ////////////////////////////////
+        $(document).ready(function () {
+            $(".op-menu-oculto").click(function () {
+                $(".menu-adaptable").slideToggle("slow");
+            });
+        });
+    </script> -->
+    <!-- Script para efecto scroll al seleccionar una opción del menú -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"
+        charset="utf-8"></script>
+</head>
+<body>
+    <nav>
+        <section class="menu">
+            <div class="div-nav-1">
+                <ul class="menu" id="menu">
+                    <li class="op-menu"><a id="clic1" href="#home">INICIO</a></li>
+                    <li class="op-menu"><a href="#coleccion">COLECCIÓN</a></li>
+                    <li class="op-menu"><a href="#questions">FAQ</a></li>
+                    <li class="op-menu"><a href="#nosotros">NOSOTROS</a></li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+
+    <section class="info-menu">
+        <div class="div-nav-2">
+            <p style="color: white;">SIGUIENTE DROP EN ABRIL</p>
+        </div>
+    </section>
+    <header id="home" class="header"></header>
+
+    <section class="coleccion" id="coleccion">
+
+    </section>
+
+    <section id="questions">
+        <h1 class="title">Preguntas Frecuentes</h1>
+        <div class="faq">
+            <div class="preguntas">
+                <h1>Envíos y retiros</h1>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path
+                    d="M3 3L21 21L39 3"
+                    stroke="black"
+                    stroke-width="7"
+                    stroke-linecap="roud"
+                    />
+                </svg>
+            </div>
+            <div class="respuestas">
+                <p>Los envíos se pueden realizar a todo el país vía DAC y tambien se puede retirar en nuestro pick up en el Prado</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="preguntas">
+                <h1>Métodos de pago</h1>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path
+                    d="M3 3L21 21L39 3"
+                    stroke="black"
+                    stroke-width="7"
+                    stroke-linecap="roud"
+                    />
+                </svg>
+            </div>
+            <div class="respuestas">
+                <p>Aceptamos Mercado Pago, Transferencia PREX - BROU y pagó en efectivo</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="preguntas">
+                <h1>Devoluciones</h1>
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path
+                    d="M3 3L21 21L39 3"
+                    stroke="black"
+                    stroke-width="7"
+                    stroke-linecap="roud"
+                    />
+                </svg>
+            </div>
+            <div class="respuestas">
+                <p>No realizamos cambios de productos por errores de talles, solamente por defectos en el producto
+                </p>
+            </div>
+        </div>
+        <script src="assets/js/scripts.js"></script>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        /////////////////////////// Parte del efecto scroll /////////////////////////////////////
+        $(function () {
+            $('a[href*=#]').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    && location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({ scrollTop: targetOffset }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+        //////////////// Reproducir sonido al hacer clic en los botones ///////////////////////
+    </script>
+</body>
+</html>
